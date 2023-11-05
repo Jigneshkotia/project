@@ -1,0 +1,215 @@
+body,html{
+    height: 100%;
+    width: 100%;
+    background:linear-gradient(45deg,rgb(38, 38, 38),black);
+}
+* {
+    font-family: 'Barlow Condensed', sans-serif;
+    color: white;
+
+}
+#back{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    z-index: 1;
+    opacity: 0.2;
+    transition-duration: 1s;
+    /* object-fit: cover; */
+}
+#back:hover{
+    opacity: 0;
+    box-shadow: 0 0 0 20px white inset;
+}
+#back video{
+    position: absolute;
+    height: 155%;
+    width: 102%;
+    object-fit: cover;
+    top: -30%;
+    background-repeat: no-repeat;
+  background-attachment: fixed;
+
+}
+#top{
+    position: absolute;
+    /* height: 100vh; */
+    width: 100vw;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    pointer-events: none;
+    object-fit: cover;
+}
+#logoimg img {
+    height: 80px;
+    margin-top: 10px;
+    object-fit: cover;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4vh 10vw;
+    margin-left: 12vw;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 45px;
+    font-size: large;
+}
+a {
+    text-decoration: none;
+    font-size: 2.6vh;
+    font-family: 'Exo', sans-serif;
+    pointer-events: auto;
+}
+a:hover {
+    color: rgb(128, 128, 128);
+}
+.lcontainer{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30vw;
+    height: 40vh;
+    border: 1px solid black;
+    pointer-events: auto;
+    background:linear-gradient(45deg, black, grey);
+    transition-duration: 1s;
+    margin: 5vh;
+    overflow: hidden;
+    z-index: 2;
+    font-size: 2.8vh;
+    border-radius: 15px;
+    box-shadow: 0 0 50px cyan;
+}
+.lcontainer:hover{
+    box-shadow: 0 0 5px white, 0 0 25px cyan, 0 0 50px white, 0 0 100px white, 0 0 200px cyan;
+}
+.bigcontainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5vh 10vw;
+}
+.rcontainer{
+    max-width: 40vw;
+    height: 40vh;
+}
+h1{
+    display: flex;
+    justify-content: center;
+    font-size: 7vh;
+    font-weight: lighter;
+    margin-bottom: 0;
+    box-shadow: 0 0 10px;
+    border-radius: 15px;
+    font-family: 'Bebas Neue', sans-serif;
+    pointer-events: auto;
+    transition-duration: 1s;
+    color: aqua;
+}
+h1:hover{
+    font-size: 10vh;
+    box-shadow: 0 0 5px white, 0 0 25px cyan, 0 0 50px white, 0 0 100px white, 0 0 200px cyan;
+}
+p{
+    font-size: 3vh;
+    pointer-events: auto;
+    transition-duration: 1s;
+}
+p:hover{
+    font-size: 3.5vh;
+    color: cyan;
+    box-shadow: 0 0 5px red,0 0 25px red,0 0 50px red,0 0 100px red,0 0 200px red;
+    border-radius: 25px;
+    padding: 15px;
+}
+.lcontainere{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(45deg, rgb(82, 82, 82),black);
+    opacity: 0;
+    transition-duration: 1s;
+    overflow: scroll;
+    padding-top: 50px;
+}
+.lcontainere:hover{
+    opacity: 1;
+}
+.lcontainer:hover{
+    height: 55vh;
+    width: 45vw;
+}
+pre{
+    font-size: 2.8vh;
+}
+#main{
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25vh;
+}
+h3{
+    font-size: 30vh;
+    margin-top: 10vh;
+    pointer-events: auto;
+    font-weight: 10000;
+    font-family: 'Bebas Neue', sans-serif;
+    transition-duration: 10s;
+    letter-spacing: 100px;
+    padding-left: 100px;
+
+}
+h3:hover{
+    color:orangered;
+    /* background: linear-gradient(45deg,yellow,orange); */
+    box-shadow: 0 0 5px red,0 0 25px red,0 0 50px red,0 0 100px red,0 0 200px yellow;
+    border-radius: 50px;
+}
+footer{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h4{
+    font-size: 30vh;
+    /* margin-top: 10vh; */
+    pointer-events: auto;
+    font-weight: 10000;
+    font-family: 'Bebas Neue', sans-serif;
+    transition-duration: 10s;
+    letter-spacing: 10px;
+    /* padding-left: 100px; */
+    color:orangered;
+    /* background: linear-gradient(45deg,yellow,orange); */
+    box-shadow: 0 0 5px red,0 0 25px red,0 0 50px red,0 0 100px red,0 0 200px yellow;
+    border-radius: 50px;
+
+}
+h4:hover{
+    color:black;
+    /* background: linear-gradient(45deg,yellow,orange); */
+    box-shadow: none;
+    border-radius: 50px;
+    
+}
+img{
+    height:15vh;
+}
